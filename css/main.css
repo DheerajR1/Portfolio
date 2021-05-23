@@ -1,25 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #50d260;;
+    --off-white: #ede43a42;
+    --dark-gray: #6B7280;
+    /* background-image: linear-gradient(to right, #a8f986, #b291d5 ); */
+}
+
 body {
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px
 }
 
-.site-header {
-    background-color: #dc752c;
-    color: #222d52;
-    height: 100vh;
-    font-family: monospace;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.profile-pic {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    box-shadow: black 2px 5px 5px;
+hr {
+    margin: 2rem 0rem;
 }
 
-.site-headerContent {
-    margin: 5vw 5vh;
-    align-content: center;
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
+}
+
+/** container **/
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/** links **/
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+ul {
+    margin: 0px;
+}
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-family: 'URW Chancery L', cursive;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+    padding: 2rem;
+    padding-top: 2rem;
+
+}
+
+.hero .hero-img {
+    max-width: 40%;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/** sections **/
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 1vw;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}/*
+.contact-img {
+    height: 32px;
+    width: 32px;
+}*/
+
+/** projects **/
+.showcase-list {
+    padding: 0.5rem 1.5rem;
+}
+
+/** blogs **/
+.showcase-blog {
+    padding-bottom: 6rem;
 }
