@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px
+    margin: 0px;
 }
 
 hr {
@@ -28,7 +28,7 @@ hr {
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 70vw;
     margin: auto;
 }
 
@@ -185,4 +185,8 @@ ul {
 /** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 800px) and (min-width: 534px) {
+
 }
